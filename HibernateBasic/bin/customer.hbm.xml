@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="scs.Customer" table="tbl_customer">
+
+<id name="customerid" column="customerid">
+<generator class="assigned"></generator>
+</id>
+<property name="customername" column="customername" length="10"/>
+
+<property name="fid" column="fid" length="10" insert="false"/>
+
+</class>
+</hibernate-mapping>
